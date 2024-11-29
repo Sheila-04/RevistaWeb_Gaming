@@ -17,6 +17,28 @@ section, footer {
     margin: 1rem;
 }
 
+h2 {
+    color:#333;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100px; 
+}
+
+.nombre-del-equipo {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+
 nav .menu {
     display: flex;
     list-style: none;
@@ -36,19 +58,69 @@ nav .menu a:hover {
     color: #bc45cc;
 }
 
-/* MEDIA QUERY */
-@media screen and (max-width: 512px) {
-    nav .menu {
-        flex-direction: column;
-        align-items: center;
-    }
+
+
+/* SLIDER */
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: 2rem auto;
+    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-contenedor {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.prev {
+    left: 1rem;
+}
+
+.carousel-btn.next {
+    right: 1rem;
+}
+
+.carousel h2 {
+    margin: 1rem;
 }
 
 
 
 
-/* CONTACTO.HTML */
 
+
+
+
+
+/* CONTACTO.HTML */
 
 .formulario {
     max-width: 600px;
@@ -64,7 +136,6 @@ nav .menu a:hover {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
-    color: #333;
 }
 
 form label {
@@ -126,8 +197,114 @@ form button:hover {
 
 
 
+
+/* FOOTER */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-redes-sociales {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #bc45cc;
+}
+
+.footer-redes-sociales .iconos a {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-redes-sociales .iconos a:hover {
+    transform: scale(1.2); /* Amplía el icono al pasar el ratón */
+}
+
+.footer-redes-sociales .iconos img {
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
 /* MEDIA QUERY */
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 620px) { 
+    /* 620px es cuando el menú se empieza a ver mal  */
+    
+    /* TITULO */
+    .titulo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        max-height: 50px;
+        margin: 0 auto;
+    }
+
+    .nombre-del-equipo {
+        font-size: 1.5rem;
+        margin-top: 0.5rem; 
+    }
+    
+    
+    
+    
+    /* MENÚ */
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li{
+        padding: 0.5rem;
+    }
+    
+    
+    
+    /* FORMULARIO */
     .formulario {
         padding: 1rem;
     }
@@ -138,5 +315,22 @@ form button:hover {
 
     form button {
         font-size: 1rem;
+    }
+
+
+
+    /* FOOTER */
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-redes-sociales {
+        text-align: center;
+    }
+
+    .footer-redes-sociales .iconos {
+        justify-content: center;
     }
 }
