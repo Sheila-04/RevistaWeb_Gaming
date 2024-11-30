@@ -60,6 +60,43 @@ nav .menu a:hover {
 
 
 
+/* TABLA */
+
+.detalles-juego {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.detalles-juego th {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+}
+
+.detalles-juego td {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    vertical-align: top; 
+}
+
+.detalles-juego tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+
+
+
+
+
+
 /* SLIDER */
 .carousel {
     position: relative;
