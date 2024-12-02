@@ -1,9 +1,9 @@
-// SLIDER
+// SLIDER 1
 document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.carousel-slide'); // Todas las imagenes
-    const carouselContenedor = document.querySelector('.carousel-contenedor');
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
+    const slides = document.querySelectorAll('.carousel-slide-1');
+    const carouselContenedor = document.querySelector('.carousel-contenedor-1');
+    const prevBtn = document.querySelector('.carousel-btn.prev-1');
+    const nextBtn = document.querySelector('.carousel-btn.next-1');
     
     let index = 0; // Índice actual del slide
 
@@ -32,9 +32,42 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         actualizarCarousel();
     });
-
-    // Hacer que el carrusel pase automáticamente cada 5 segundos
-    Intervalo(() => {
-        nextBtn.click();
-    }, 5000);
 });
+
+
+// SLIDER 2
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.carousel-slide-2');
+    const carouselContenedor = document.querySelector('.carousel-contenedor-2');
+    const prevBtn = document.querySelector('.carousel-btn.prev-2');
+    const nextBtn = document.querySelector('.carousel-btn.next-2');
+    
+    let index = 0; // Índice actual del slide
+
+    function actualizarCarousel() {
+        // Calcula el desplazamiento en función del índice
+        const offset = -index * slides[0].clientWidth;
+        carouselContenedor.style.transform = `translateX(${offset}px)`;
+    }
+
+    nextBtn.addEventListener('click', function () {
+        if (index < slides.length - 1) {
+            index++;
+        } 
+        else {
+            index = 0; // Volver al inicio
+        }
+        actualizarCarousel();
+    });
+
+    prevBtn.addEventListener('click', function () {
+        if (index > 0) {
+            index--;
+        } 
+        else {
+            index = slides.length - 1; // Ir al último slide
+        }
+        actualizarCarousel();
+    });
+});
+

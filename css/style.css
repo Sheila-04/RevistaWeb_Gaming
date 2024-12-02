@@ -21,6 +21,8 @@ h2 {
     color:#333;
 }
 
+
+/* ENCABEZADO */
 .titulo {
     display: flex;
     align-items: center;
@@ -39,6 +41,7 @@ h2 {
 }
 
 
+/* MENU */
 nav .menu {
     display: flex;
     list-style: none;
@@ -98,6 +101,16 @@ nav .menu a:hover {
 
 
 /* SLIDER */
+.galeria-concepts {
+    display: flex;
+    align-content: space-around;
+}
+
+.carousel h3 {
+    margin: 1rem;
+    color: #333;
+}
+
 .carousel {
     position: relative;
     max-width: 300px;
@@ -105,21 +118,6 @@ nav .menu a:hover {
     overflow: hidden; /* Oculta las imágenes fuera de la vista */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-contenedor {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-slide img {
-    width: 100%;
-    display: block;
 }
 
 .carousel-btn {
@@ -137,17 +135,57 @@ nav .menu a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.carousel-btn.prev {
+
+/* 1 */
+.carousel-contenedor-1 {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide-1 {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide-1 img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn.prev-1 {
     left: 1rem;
 }
 
-.carousel-btn.next {
+.carousel-btn.next-1 {
     right: 1rem;
 }
 
-.carousel h2 {
-    margin: 1rem;
+
+
+/* 2 */
+.carousel-contenedor-2 {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
 }
+
+.carousel-slide-2 {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide-2 img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn.prev-2 {
+    left: 1rem;
+}
+
+.carousel-btn.next-2 {
+    right: 1rem;
+}
+
 
 
 
