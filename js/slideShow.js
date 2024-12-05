@@ -1,16 +1,16 @@
 // SLIDER 1
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.carousel-slide-1');
-    const carouselContenedor = document.querySelector('.carousel-contenedor-1');
+    const carouselContainer = document.querySelector('.carousel-container-1');
     const prevBtn = document.querySelector('.carousel-btn.prev-1');
     const nextBtn = document.querySelector('.carousel-btn.next-1');
     
     let index = 0; // Índice actual del slide
 
-    function actualizarCarousel() {
+    function updateCarousel() {
         // Calcula el desplazamiento en función del índice
         const offset = -index * slides[0].clientWidth;
-        carouselContenedor.style.transform = `translateX(${offset}px)`;
+        carouselContainer.style.transform = `translateX(${offset}px)`;
     }
 
     nextBtn.addEventListener('click', function () {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             index = 0; // Volver al inicio
         }
-        actualizarCarousel();
+        updateCarousel();
     });
 
     prevBtn.addEventListener('click', function () {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             index = slides.length - 1; // Ir al último slide
         }
-        actualizarCarousel();
+        updateCarousel();
     });
 });
 
@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // SLIDER 2
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.carousel-slide-2');
-    const carouselContenedor = document.querySelector('.carousel-contenedor-2');
+    const carouselContainer = document.querySelector('.carousel-container-2');
     const prevBtn = document.querySelector('.carousel-btn.prev-2');
     const nextBtn = document.querySelector('.carousel-btn.next-2');
     
     let index = 0; // Índice actual del slide
 
-    function actualizarCarousel() {
+    function updateCarousel() {
         // Calcula el desplazamiento en función del índice
         const offset = -index * slides[0].clientWidth;
-        carouselContenedor.style.transform = `translateX(${offset}px)`;
+        carouselContainer.style.transform = `translateX(${offset}px)`;
     }
 
     nextBtn.addEventListener('click', function () {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             index = 0; // Volver al inicio
         }
-        actualizarCarousel();
+        updateCarousel();
     });
 
     prevBtn.addEventListener('click', function () {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             index = slides.length - 1; // Ir al último slide
         }
-        actualizarCarousel();
+        updateCarousel();
     });
 });
 

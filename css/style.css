@@ -1,6 +1,3 @@
-/* INDEX.HTML */
-
-
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
@@ -22,11 +19,15 @@ h2 {
 }
 
 
+
+
+
 /* ENCABEZADO */
-.titulo {
+.title {
     display: flex;
     align-items: center;
     gap: 2rem;
+    font-family: 'Pirata One';
 }
 
 .logo {
@@ -34,11 +35,14 @@ h2 {
     max-height: 100px; 
 }
 
-.nombre-del-equipo {
+.name-team {
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
 }
+
+
+
 
 
 /* MENU */
@@ -63,9 +67,11 @@ nav .menu a:hover {
 
 
 
+
+
 /* TABLA */
 
-.detalles-juego {
+.game-details {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
@@ -75,7 +81,7 @@ nav .menu a:hover {
     color: #333;
 }
 
-.detalles-juego th {
+.game-details th {
     background-color: #333;
     color: #fff;
     padding: 1rem;
@@ -84,13 +90,13 @@ nav .menu a:hover {
     border: 1px solid #ccc;
 }
 
-.detalles-juego td {
+.game-details td {
     padding: 0.8rem;
     border: 1px solid #ccc;
     vertical-align: top; 
 }
 
-.detalles-juego tr:nth-child(even) {
+.game-details tr:nth-child(even) {
     background-color: #f1f3f5;
 }
 
@@ -101,7 +107,7 @@ nav .menu a:hover {
 
 
 /* SLIDER */
-.galeria-concepts {
+.gallery-concepts {
     display: flex;
     align-content: space-around;
 }
@@ -137,7 +143,7 @@ nav .menu a:hover {
 
 
 /* 1 */
-.carousel-contenedor-1 {
+.carousel-container-1 {
     display: flex;
     transition: transform 0.4s ease-in-out;
 }
@@ -163,7 +169,7 @@ nav .menu a:hover {
 
 
 /* 2 */
-.carousel-contenedor-2 {
+.carousel-container-2 {
     display: flex;
     transition: transform 0.4s ease-in-out;
 }
@@ -176,6 +182,8 @@ nav .menu a:hover {
 .carousel-slide-2 img {
     width: 100%;
     display: block;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .carousel-btn.prev-2 {
@@ -197,7 +205,7 @@ nav .menu a:hover {
 
 /* CONTACTO.HTML */
 
-.formulario {
+.form {
     max-width: 600px;
     margin: 2rem auto;
     padding: 1.5rem;
@@ -207,7 +215,7 @@ nav .menu a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.formulario h2 {
+.form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
@@ -254,18 +262,18 @@ form button:hover {
     background-color: #bc45cc;
 }
 
-.formulario a{
+.form a{
     text-decoration: none;
 }
 
-.formulario a h3{
+.form a h3{
     text-decoration: none;
     text-align: right;
     color: black;
     transition: color 0.3s ease;
 }
 
-.formulario a h3:hover {
+.form a h3:hover {
     color: #bc45cc;
 }
 
@@ -280,7 +288,7 @@ form button:hover {
     padding: 2rem 1rem;
 }
 
-.footer-contenedor {
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -290,7 +298,7 @@ form button:hover {
 }
 
 .footer-links,
-.footer-redes-sociales {
+.footer-social-media {
     flex: 1;
     min-width: 250px;
 }
@@ -314,17 +322,17 @@ form button:hover {
     color: #bc45cc;
 }
 
-.footer-redes-sociales .iconos a {
+.footer-social-media .icons a {
     display: inline-block;
     margin-right: 1rem;
     transition: transform 0.3s ease;
 }
 
-.footer-redes-sociales .iconos a:hover {
+.footer-social-media .icons a:hover {
     transform: scale(1.2);
 }
 
-.footer-redes-sociales .iconos img {
+.footer-social-media .icons img {
     width: auto;
     height: 2rem;
 }
@@ -349,7 +357,7 @@ form button:hover {
     /* 620px es cuando el menú se empieza a ver mal  */
     
     /* TITULO */
-    .titulo {
+    .title {
         flex-direction: column;
         text-align: center;
     }
@@ -359,7 +367,7 @@ form button:hover {
         margin: 0 auto;
     }
 
-    .nombre-del-equipo {
+    .name-team {
         font-size: 1.5rem;
         margin-top: 0.5rem; 
     }
@@ -377,10 +385,16 @@ form button:hover {
         padding: 0.5rem;
     }
     
+
+    /* SLIDER */
+    .gallery-concepts {
+        display: flex;
+        flex-direction: column;
+    }
     
     
     /* FORMULARIO */
-    .formulario {
+    .form {
         padding: 1rem;
     }
 
@@ -395,17 +409,17 @@ form button:hover {
 
 
     /* FOOTER */
-    .footer-contenedor {
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
 
     .footer-links,
-    .footer-redes-sociales {
+    .footer-social-media {
         text-align: center;
     }
 
-    .footer-redes-sociales .iconos {
+    .footer-social-media .icons {
         justify-content: center;
     }
 }
