@@ -1,13 +1,14 @@
+/* Estilos generales */
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Fuente del cuerpo */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 2rem;
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 1rem 2rem; /* Espaciado interno */
 }
 
 section, footer {
@@ -22,17 +23,18 @@ h2 {
 
 
 
-/* ENCABEZADO */
+/* Sección del título principal */
 .title {
-    display: flex;
+    display: flex; /* Coloca el logo y el texto en línea horizontal */
     align-items: center;
-    gap: 2rem;
-    font-family: 'Pirata One';
+    gap: 2rem; /* Espaciado entre logo y texto */
+    font-family: 'Pirata One'; /* Fuente personalizada */
 }
 
+/* Logotipo del equipo */
 .logo {
-    max-width: 100%;
-    max-height: 100px; 
+    max-width: 100%; /* Ancho máximo */
+    max-height: 100px; /* Altura máxima */
 }
 
 .name-team {
@@ -45,22 +47,24 @@ h2 {
 
 
 
-/* MENU */
+/* Menú de navegación */
 nav .menu {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: 1rem;
+    display: flex; /* Coloca los enlaces en una línea horizontal */
+    list-style: none; /* Quita los puntos de las listas */
+    justify-content: space-around; /* Distribuye los enlaces de manera uniforme */
+    padding: 1rem; 
     margin: 1rem;
 }
 
+/* Enlaces del menú */
 nav .menu a{
-    color: white;
-    text-decoration: none;
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none; /* Sin subrayado */
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
 }
 
+/* Cambio de color al pasar el ratón */
 nav .menu a:hover {
     color: #bc45cc;
 }
